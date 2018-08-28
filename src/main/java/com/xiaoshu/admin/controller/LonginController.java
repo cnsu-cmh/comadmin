@@ -197,7 +197,7 @@ public class LonginController {
     @SysLog("退出系统")
     public String logOut(){
         SecurityUtils.getSubject().logout();
-        return "index";
+        return "redirect:admin";
     }
 
 }
